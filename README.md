@@ -2,4 +2,4 @@
 
 This repo contains knowledge articles for DataLink.
 
-- [Programmatically Recalculate (Resize) DataLink Functions in version 2014 and later](Recalculate/REAME.md)
+- [Programmatically Recalculate (Resize) DataLink Functions in version 2014 and later](Recalculate/README.md)
