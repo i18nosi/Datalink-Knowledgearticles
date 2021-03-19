@@ -1,29 +1,23 @@
-## Programmatically Recalculate (Resize) DataLink Functions in version 2014 and later
+# Programmatically Recalculate (Resize) DataLink Functions in version 2014 and later
 
-#### Issues
+### Issues
 
 Content originally from KB01035
 
 You want to programmatically select, resize, and recalculate a PI DataLink array, providing the same functionality as the "Recalculate (Resize) Function" option from the function's right-click menu.
 ![](C:\dev\Datalink-Knowledgearticles\Recalculate\Issues.jpg)
 
-------
-
-#### Environment
+### Environment
 
 PI DataLink 2014 and later
 
-------
-
-#### Solution
+### Solution
 
 OSIsoft exposes the ability to select and resize PI DataLink functions using Macros with VBA.
 
 - Starting in PI DataLink 2014, it is no longer necessary to reference pidldialogs.xla because the ResizeRange and SelectRange methods implemented for the Explore Events and Compare Events functions are exposed to VBA through the [AddInUtilities class](https://msdn.microsoft.com/en-us/library/bb608621.aspx).
 
-------
-
-#### Cause
+### Cause
 
 When a PI DataLink function writes a function array, it [automatically sizes](https://livelibrary.osisoft.com/LiveLibrary/content/en/datalink-v6/GUID-7455178C-F992-4F07-A2CB-F5CDC8D765AD) the array to fit the returned data. Functions write the function array when you click **OK** or **Apply** on the task pane or when you click **Recalculate (Resize) Function** on the shortcut menu.
 
@@ -47,7 +41,7 @@ The following VBA examples are presented:
 
 
 
-#### Recalculate and resize PI DataLink functions in all sheets using keywords
+### Recalculate and resize PI DataLink functions in all sheets using keywords
 
 1. Enter the keywords "PI DataLink Right", "PI DataLink Left", or "PI DataLink Below" so the PI DataLink functions are appropriately located to the right, left, or below the keyword cells:
    ![img](Sheet1.jpg)
@@ -250,7 +244,7 @@ End Sub
 - The "Sample..." documents can be e-mailed or shared with customers.
 - The "INTERNALONLY..." document should not be shared, and is only for building our internal knowledge.
 
-#### Additional option (Internal Only): Recalculate and resize all PI DataLink functions.
+### Additional option (Internal Only): Recalculate and resize all PI DataLink functions.
 
 CAUTION:
 
