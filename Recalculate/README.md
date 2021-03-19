@@ -27,7 +27,7 @@ Other methods that recalculate or update a function do not write a new function 
 - If the update returns more values than the function array can show, PI DataLink returns the text *Resize to show all values* at the bottom of the array unless the preference settings disable the message.
 
 Note the VBA examples presented in this article run significantly faster when **Disable automatic task pane display on click** is selected in **DataLink settings:**
-![img](C:\dev\Datalink-Knowledgearticles\Recalculate\Settings.jpg)
+![img](Settings.jpg)
 
 **DISCLAIMER**: The examples below are not tested by OSIsoft as part of our release cycle, and as such we cannot guarantee that they will work without issue.
 
